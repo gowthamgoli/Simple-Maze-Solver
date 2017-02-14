@@ -13,6 +13,8 @@ function index(row, col, N){
 function dispPath(path, N){
 	for(var i=path.length-1; i>=0; i--){
 		console.log([Math.floor(path[i]/N), path[i]%N]);
+		document.write("[" + [Math.floor(path[i]/N), path[i]%N] +"]" + "<br>");
+		//document.write("\n");
 	}
 }
 
